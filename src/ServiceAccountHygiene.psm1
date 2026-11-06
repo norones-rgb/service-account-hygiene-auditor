@@ -111,7 +111,7 @@ function Assert-Snapshot {
 
 function Add-AuditFinding {
     param(
-        [Parameter(Mandatory)][Collections.Generic.List[object]]$List,
+        [Parameter(Mandatory)][AllowEmptyCollection()][Collections.Generic.List[object]]$List,
         [Parameter(Mandatory)][string]$Id,
         [Parameter(Mandatory)][string]$Severity,
         [Parameter(Mandatory)][object]$Account,
