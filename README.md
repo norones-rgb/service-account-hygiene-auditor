@@ -1,5 +1,12 @@
 # Service Account Hygiene Auditor
 
+> **IAM Automation Toolkit · Project 4/5** | Read-only PowerShell evaluation MVP · Synthetic-first design
+>
+> [**Portfolio directory**](https://github.com/norones-rgb/ad-ldap-exception-risk-analyzer/blob/main/IAM-AUTOMATION-PORTFOLIO.md) · [**Run the demo**](DEMO.md) · [**Sample HTML preview**](docs/fixture-preview.html) · [**Windows/Linux CI**](https://github.com/norones-rgb/service-account-hygiene-auditor/actions/workflows/ci.yml)
+>
+> [![Pester CI](https://github.com/norones-rgb/service-account-hygiene-auditor/actions/workflows/ci.yml/badge.svg)](https://github.com/norones-rgb/service-account-hygiene-auditor/actions/workflows/ci.yml) · PowerShell 7.2+ · CSV / JSON / offline HTML output
+
+
 **Read-only PowerShell IAM security analysis | ISGIN portfolio MVP v0.1**
 
 Review traditional user-based Active Directory service accounts and managed service accounts (gMSAs/sMSAs) for risky delegation settings, preauthentication gaps, old user-managed passwords, privileges, approximate inactivity, governance ownership, and incomplete evidence. Export review-ready **HTML, CSV, and JSON** without modifying directory objects.
