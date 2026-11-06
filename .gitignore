@@ -1,0 +1,10 @@
+# Outputs can contain sensitive AD identifiers and configuration
+output/*
+!output/.gitkeep
+*.log
+*.bak
+*.tmp
+.DS_Store
+.vscode/
+.idea/
+config/local.*.json

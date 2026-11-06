@@ -1,0 +1,25 @@
+name: Service account hygiene CI
+on:
+  push:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  pester:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Pester v5
+        shell: pwsh
+        run: |
+          Install-Module Pester -MinimumVersion 5.6.1 -Scope CurrentUser -Force -SkipPublisherCheck -ErrorAction Stop
+          Import-Module Pester -MinimumVersion 5.6.1 -ErrorAction Stop
+      - name: Run Pester tests
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Invoke-Pester -Path ./tests -Output Detailed -CI

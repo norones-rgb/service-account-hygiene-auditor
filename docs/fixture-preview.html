@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'">
+<title>Service Account Hygiene Auditor — Synthetic fixture preview</title>
+<style>
+:root{color-scheme:light}*{box-sizing:border-box}body{background:#f8f7f3;color:#282722;font:15px/1.55 system-ui,-apple-system,sans-serif;margin:0 auto;max-width:1120px;padding:42px 24px}h1{font-size:clamp(26px,4vw,42px);line-height:1.2;margin:8px 0}h2{margin-top:34px}.eyebrow{color:#8a704f;text-transform:uppercase;letter-spacing:.13em;font-size:12px;font-weight:700}.muted{color:#6d706f}.small{font-size:12px}.banner{background:#fff;border-left:4px solid #bb9466;padding:17px 22px;margin:28px 0;border-radius:4px;box-shadow:0 1px 3px #0001}.metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(128px,1fr));gap:10px}.metric{background:white;border:1px solid #e7e3da;border-radius:10px;padding:16px}.metric b{display:block;font-size:30px}.metric span{color:#777;font-size:13px}.tablebox{overflow:auto;border:1px solid #e3dfd7;border-radius:10px;background:white}table{border-collapse:collapse;width:100%;font-size:13px}th,td{padding:11px 14px;text-align:left;border-bottom:1px solid #eee9e2;white-space:normal;overflow-wrap:anywhere}th{background:#ece8df;white-space:nowrap}.sev-critical td:first-child{color:#a8322b;font-weight:700}.sev-high td:first-child{color:#a15e22;font-weight:700}.sev-medium td:first-child{color:#9c791b;font-weight:700}.sev-low td:first-child{color:#376f91;font-weight:700}footer{padding-top:24px;color:#64635e;font-size:12px}
+</style></head>
+<body><div class="eyebrow">ISGIN / IAM Security Assessments / Portfolio Demo</div><h1>Service Account Hygiene Auditor</h1><p class="muted">Read-only risk review · Synthetic fixture · Pinned assessment: 05 Nov 2026, 19:00 UTC</p>
+<div class="banner"><strong>Review status: Incomplete evidence</strong><p>An account intentionally lacks required directory attributes. Missing evidence is not a passing control. This preview is independently generated from the documented fixture expectations; it is not an actual PowerShell run.</p></div>
+<section class="metrics"><div class="metric"><b>11</b><span>Accounts assessed</span></div><div class="metric"><b>20</b><span>Expected findings</span></div><div class="metric"><b>2</b><span>Critical</span></div><div class="metric"><b>9</b><span>High</span></div><div class="metric"><b>3</b><span>Medium</span></div><div class="metric"><b>5</b><span>Low</span></div><div class="metric"><b>1</b><span>Information</span></div></section>
+<h2>Expected findings</h2><div class="tablebox"><table><thead><tr><th>Severity</th><th>Rule</th><th>Account</th><th>Type</th><th>Observation</th></tr></thead><tbody>
+<tr class="sev-critical"><td>Critical</td><td>SA-002</td><td>svc_backup_admin</td><td>UserService</td><td>Kerberos preauth disabled</td></tr>
+<tr class="sev-critical"><td>Critical</td><td>SA-001</td><td>svc_sql_legacy</td><td>UserService</td><td>Unconstrained delegation</td></tr>
+<tr class="sev-high"><td>High</td><td>SA-007</td><td>gmsa_backup$</td><td>gMSA</td><td>Privileged group membership</td></tr>
+<tr class="sev-high"><td>High</td><td>SA-003</td><td>svc_backup_admin</td><td>UserService</td><td>DES-only Kerberos flag</td></tr>
+<tr class="sev-high"><td>High</td><td>SA-007</td><td>svc_backup_admin</td><td>UserService</td><td>Privileged group membership</td></tr>
+<tr class="sev-high"><td>High</td><td>SA-005</td><td>svc_batch_stale</td><td>UserService</td><td>Old user password</td></tr>
+<tr class="sev-high"><td>High</td><td>SA-010</td><td>svc_expired</td><td>UserService</td><td>Account expiration passed</td></tr>
+<tr class="sev-high"><td>High</td><td>SA-004</td><td>svc_sql_legacy</td><td>UserService</td><td>Never-expiring user password</td></tr>
+<tr class="sev-high"><td>High</td><td>SA-005</td><td>svc_sql_legacy</td><td>UserService</td><td>Old user password</td></tr>
+<tr class="sev-high"><td>High</td><td>SA-007</td><td>svc_sql_legacy</td><td>UserService</td><td>Privileged group membership</td></tr>
+<tr class="sev-high"><td>High</td><td>SA-012</td><td>svc_sql_legacy</td><td>UserService</td><td>SPN with old user password</td></tr>
+<tr class="sev-medium"><td>Medium</td><td>SA-006</td><td>svc_batch_stale</td><td>UserService</td><td>Stale replicated last logon</td></tr>
+<tr class="sev-medium"><td>Medium</td><td>SA-008</td><td>svc_retired</td><td>UserService</td><td>Disabled but privileged</td></tr>
+<tr class="sev-medium"><td>Medium</td><td>SA-009</td><td>svc_web_delegate</td><td>UserService</td><td>Constrained delegation to review</td></tr>
+<tr class="sev-low"><td>Low</td><td>SA-013</td><td>svc_admin_history</td><td>UserService</td><td>Historical adminCount indicator</td></tr>
+<tr class="sev-low"><td>Low</td><td>SA-011</td><td>svc_batch_stale</td><td>UserService</td><td>No owner recorded</td></tr>
+<tr class="sev-low"><td>Low</td><td>SA-011</td><td>svc_missing_evidence</td><td>UserService</td><td>No owner recorded</td></tr>
+<tr class="sev-low"><td>Low</td><td>SA-014</td><td>svc_missing_evidence</td><td>UserService</td><td>No replicated logon timestamp</td></tr>
+<tr class="sev-low"><td>Low</td><td>SA-011</td><td>svc_retired</td><td>UserService</td><td>No owner recorded</td></tr>
+<tr class="sev-information"><td>Information</td><td>SA-E03</td><td>svc_missing_evidence</td><td>UserService</td><td>Incomplete attribute evidence</td></tr>
+</tbody></table></div><footer><p>Fictional identities and domains only. This page contains no scripts, external resources or credentials. Actual run reports also include evidence and remediation guidance.</p></footer></body></html>

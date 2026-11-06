@@ -1,0 +1,7 @@
+{
+  "passwordAgeDays": 180,
+  "inactivityDays": 90,
+  "spnPasswordAgeDays": 365,
+  "legacySamPrefixes": ["svc_", "svc-", "sa_"],
+  "privilegedGroups": []
+}
